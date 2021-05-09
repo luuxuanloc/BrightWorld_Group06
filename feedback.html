@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+<!-- library for logo slider-->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- JQuery for logo slider-->
+<link rel="stylesheet" href="BrightWorld.css" />
+<script>
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+<script>
+    function check(){
+        //CHECK EMPTY
+        var feedback = registration.feedback.value;
+        var email = registration.email.value;
+
+        if (!email){
+            alert("The email cannot left blank!");
+            registration.email.focus();
+            return false;
+        }
+        if (!feedback){
+            alert("The feedback cannot left blank!");
+            registration.feedback.focus();
+            return false;
+        }
+
+        var sEmail = registration.email.value;
+        var reEmail = /^\w+[@]\w+[.]\w{3}([.]\w{2})?$/;
+        if (!reEmail.test(sEmail)){
+            alert("Required email input.");
+            registration.email.focus();
+            return false;
+        }
+
+        alert("Feedback success.");
+    }
+</script>
+<style>
+    header {
+      background-color: rgb(32, 31, 30);
+    }
+    tr, td {
+        padding: 15px;
+    }
+</style>
+</head> 
+<body>
+
+<!--header-->
+<header>
+  <div id="Header" class="container-fluid">
+    <div id="logo" class="col-lg-4">
+        <img src="images/logo/logoBrightworld.png" width="55%">
+    </div>
+    <div id="btnSearch" class="col-md-6">
+      <form class="navbar-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>   
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <ul id="btnLogin" class="nav navbar-nav navbar-right">
+      <li ><a href="#myModal" class="trigger-btn " data-toggle="modal" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-shopping-cart "></span>Carts</a></li>
+    </ul>
+  
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-login">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="avatar">
+              <img src="images/logo/logoBrightworld.png" width="20%" alt="Avatar">
+            </div>			
+            <h4 class="modal-title">Member Login</h4>	
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        <div class="modal-body">
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+            </div>        
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#">Forgot Password?</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!--navbar-->
+  <div id="menu" >
+    <ul>
+      <li><a href="index.html"><span class="glyphicon glyphicon-home"></a></li>
+      <li><a href="aboutus.html">AboutUs</a></li>
+      <li><a href="categories.html">Categories</a>
+        <ul class="sub-menu">
+          <li><a href="bulds.html">Bulds</a></li>
+          <li><a href="spotlighting.html">Spot lights</a></li>
+          <li><a href="decorationlight.html">Decoration light</a></li>
+          <li><a href="smartLight.html">Smart light</a></li>
+        </ul>
+      </li>
+      <li><a href="Brands.html">Brands</a>
+        <ul class="sub-menu">
+          <li><a href="philips.html">Philips Lightting</a></li>
+          <li><a href="osram.html">Osram</a></li>
+          <li><a href="ge.html">GE light</a></li>
+          <li><a href="acuitybrands.html">Acuity Brands</a></li>
+        </ul>
+      </li>
+      <li><a href="register.html">Registration</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="showroom.html">Showroom</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <BR>
+<BR><BR><BR>
+<h2 style="color:ORANGE">FEEDBACK FORM</h2>
+<div align="center">
+    <form name="registration" action="" onsubmit="return check()">
+        <table align="center">
+            <tr>
+                <td align="right">Full name<br>(optional)</td>
+                <td><input type="text" name="fullname" autofocus placeholder="Enter full name"></td>
+            </tr>
+            <tr>
+                <td align="right">Email</td>
+                <td><input type="email" name="email" required placeholder="Enter email"></td>
+            </tr>
+            <tr>
+                <td align="right">Feedback</td>
+                <td>
+                    <textarea rows="5" cols="50" accesskey="c" name="feedback"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" id="button" value="Register" class="btn btn-primary">
+                    <input type="reset" id="button" value="Reset" class="btn btn-primary">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+
+<!--footer-->  
+<footer id="fh5co-footer" class="fh5co-bg" role="contentinfo">
+<div class="overlay"></div>
+<div class="container">
+<div class="row row-pb-md">
+  <div class="col-md-4 fh5co-widget">	
+    <h3 style="color: orange;">Showroom in Germany</h3>
+    <p> <span class="glyphicon glyphicon-home"> </span> Dr.-Alfred-Herrhausen-Allee 20, 47228 Duisburg,Germany</p>  
+    <p> <span class="glyphicon glyphicon-phone-alt"> </span>  +49 2065 94322-100</p>   
+    <p> <span class="glyphicon glyphicon-print"> </span>  +49 2065 94322-120</p>   
+    <p> <span class="glyphicon glyphicon-envelope"> </span>  infor@brightworld.com</p>
+    <p><a class="btn btn-primary" href="showroom.html">Show on Map</a></p>
+  </div>
+
+  <div class="col-md-4 fh5co-widget">
+    <h3 style="color: orange;">Showroom in USA</h3>
+    <p> <span class="glyphicon glyphicon-home"> </span> Dr.-Alfred-Herrhausen-Allee 20, 47228 Duisburg,Germany</p>     
+    <p> <span class="glyphicon glyphicon-phone-alt"> </span>  +49 2065 94322-100</p>   
+    <p> <span class="glyphicon glyphicon-print"> </span>  +49 2065 94322-120</p>   
+    <p> <span class="glyphicon glyphicon-envelope"> </span>  infor@brightworld.com</p>
+    <p><a class="btn btn-primary" href="showroom.html">Show on Map</a></p>
+  </div>
+
+  <div class="col-md-4 fh5co-widget">
+    <h3 style="color: orange;">Showroom in Vietnam</h3>
+    <p> <span class="glyphicon glyphicon-home"> </span> 268 Ly Thuong Kiet, District 10, Ho Chi Minh City,Vietnam</p>  
+    <p> <span class="glyphicon glyphicon-phone-alt"> </span>  +49 2065 94322-100</p>   
+    <p> <span class="glyphicon glyphicon-print"> </span>  +49 2065 94322-120</p>   
+    <p> <span class="glyphicon glyphicon-envelope"> </span>  infor@brightworld.com</p>
+    <p><a class="btn btn-primary" href="showroom.html">Show on Map</a></p>
+  </div>
+
+  <div >
+    <div class="col-md-4">
+      <ul class="fh5co-footer-links">
+        <h3 style="color: orange;">Products</h3>
+        <li><a href="#">Bulds</a></li>
+        <li><a href="#">Spot Light</a></li>
+        <li><a href="#">Decoration Light</a></li>
+        <li><a href="#">Smart Light</a></li>
+      </ul>
+    </div>
+              
+    <div class="col-md-4">
+      <ul class="fh5co-footer-links">
+        <h3 style="color: orange;">Brands</h3>
+        <li><a href="#">Phillips</a></li>
+        <li><a href="#">OSRAM</a></li>
+        <li><a href="#">GE Light</a></li>
+        <li><a href="#">Acuti Brands</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+      <h3 style="color: orange;">Social links</h3>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.skype.com/"><i class="fa fa-skype"></i></a>
+      <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="row copyright">
+  <div class="col-md-12 text-center">
+    <p>
+      <small class="block">&copy; 2017 | All Rights Reserved.</small> 
+      <small class="block">Powered by  BrightwWorld</small>
+    </p>
+  </div>
+</div>
+</footer>
+</html>

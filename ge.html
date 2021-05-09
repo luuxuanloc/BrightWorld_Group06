@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+<!-- library for logo slider-->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- JQuery for logo slider-->
+<link rel="stylesheet" href="BrightWorld.css" />
+<script>
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 3
+        }
+    }]
+  });
+});
+</script>
+<style>
+  header {
+    background-color: rgb(32, 31, 30);
+  }
+</style>
+</head> 
+<body>
+
+<!--header-->
+<header>
+<div id="Header" class="container-fluid">
+  <div id="logo" class="col-lg-4">
+      <img src="images/logo/logoBrightworld.png" width="55%">
+  </div>
+  <div id="btnSearch" class="col-md-6">
+    <form class="navbar-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>   
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+  <ul id="btnLogin" class="nav navbar-nav navbar-right">
+    <li ><a href="#myModal" class="trigger-btn " data-toggle="modal" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart "></span> Carts</a></li>
+  </ul>
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="avatar">
+            <img src="images/logo/logoBrightworld.png" width="20%" alt="Avatar">
+          </div>			
+          <h4 class="modal-title">Member Login</h4>	
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+      <div class="modal-body">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+          </div>        
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Forgot Password?</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<!--navbar-->
+<div id="menu" >
+  <ul>
+    <li><a href="Index.html"><span class="glyphicon glyphicon-home"></a></li>
+    <li><a href="AboutUs.html">AboutUs</a></li>
+    <li><a href="Categories.html">Categories</a>
+      <ul class="sub-menu">
+        <li><a href="Bulds.html">Bulds</a></li>
+        <li><a href="Spotlighting.html">Spot lights</a></li>
+        <li><a href="DecorationLight.html">Decoration light</a></li>
+        <li><a href="SmartLight.html">Smart light</a></li>
+      </ul>
+    </li>
+    <li><a href="Brands.html">Brands</a>
+      <ul class="sub-menu">
+        <li><a href="Philips.html">Philips Lightting</a></li>
+        <li><a href="Osram.html">Osram</a></li>
+        <li><a href="GE.html">GE light</a></li>
+        <li><a href="AcuityBrands.html">Acuity Brands</a></li>
+      </ul>
+    </li>
+    <li><a href="Register.html">Register</a></li>
+    <li><a href="Feedback.html">Feedback</a></li>
+    <li><a href="showroom.html">Showroom</a></li>
+    <li><a href="Contactus.html">Contact Us</a></li>
+  </ul>
+</div>
+
+<!-- #Main Menu -->
+<section id="section-products">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <ol class="breadcrumb">
+                  <li>
+                      <a href="Index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="Brands.html">Brands</a>
+                  </li>
+                  <li class="active">General Electric Lighting</li>
+              </ol>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3 sidebar-theia">
+              <div class="section-col col-left">
+                  <div class="section-title clearfix">
+                      <a href="#menu-collapse" data-toggle="collapse"  class="disabled-link"><h4 class="heading title-collapse"><span>All Brands<i class="fa fa-angle-down" aria-hidden="true"></i></span></h4></a>
+                  </div>
+                  <ul id="menu-collapse" class="menu-categories-sidebar collapse disabled-collapse">
+                      <li><a href="Philips.html">Philips Lightting</a></li>
+                      <li><a href="Osram.html">Osram</a></li>
+                      <li><a href="GE.html">GE light</a></li>
+                      <li><a href="AcuityBrands.html">Acuity Brands</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-sm-9 content-theia">
+              <div class="section-col col-mid">
+                  <div id="product-info">
+                      <div class="section-title clearfix"><h4 class="heading"><span>PRODUCTS</span></h4></div>
+                      <div class="row">
+                          <div class="col-md-4 col-sm-6 item">
+                            <div class="img-hover-zoom">
+                              <a href="#" alt=""><img src="images/product/GEbulds.jpg" class="img-responsive" alt="Image"></a>
+                              <p class="prod-title"><a href="#">Daylight LED 3-way A19 Light Bulb</a></p>
+                              <div class="prod-price">361.000₫</div>
+                              <button class="btn btn-danger my-cart-btn">Add to Cart</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 item">
+                            <div class="img-hover-zoom">
+                              <a href="#" alt=""><img src="images/product/SmartGE.jpg" class="img-responsive" alt="Image"></a>
+                              <p class="prod-title"><a href="#">GE Full Color A19 Smart LED Bulb</a></p>
+                              <div class="prod-price">215.800₫</div>
+                              <button class="btn btn-danger my-cart-btn">Add to Cart</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 item">
+                            <div class="img-hover-zoom">
+                              <a href="#" alt=""><img src="images/product/decorativeGe.jpg" class="img-responsive" alt="Image"></a>
+                              <p class="prod-title"><a href="#">Replacement Frosted Decorative Bulb</a></p>
+                              <div class="prod-price">361.000₫</div>
+                              <button class="btn btn-danger my-cart-btn">Add to Cart</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 item">
+                            <div class="img-hover-zoom">
+                              <a href="#" alt=""><img src="images/product/SpotGE.jpg" class="img-responsive" alt="Image"></a>
+                              <p class="prod-title"><a href="#"> Color Changing Replacement LED PAR38</a></p>
+                              <div class="prod-price">361.000₫</div>
+                              <button class="btn btn-danger my-cart-btn">Add to Cart</button>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</body>
+
+<!--footer-->  
+<footer id="fh5co-footer" class="fh5co-bg" role="contentinfo">
+<div class="overlay"></div>
+<div class="container">
+<div class="row row-pb-md">
+  <div class="col-md-4 fh5co-widget">	
+    <h3 style="color: orange;">Showroom in Germany</h3>
+    <p> <span class="glyphicon glyphicon-home"> </span> Dr.-Alfred-Herrhausen-Allee 20, 47228 Duisburg,Germany</p>  
+    <p> <span class="glyphicon glyphicon-phone-alt"> </span>  +49 2065 94322-100</p>   
+    <p> <span class="glyphicon glyphicon-print"> </span>  +49 2065 94322-120</p>   
+    <p> <span class="glyphicon glyphicon-envelope"> </span>  infor@brightworld.com</p>
+    <p><a class="btn btn-primary" href="showroom.html">Show on Map</a></p>
+  </div>
+
+  <div class="col-md-4 fh5co-widget">
+    <h3 style="color: orange;">Showroom in USA</h3>
+    <p> <span class="glyphicon glyphicon-home"> </span> Dr.-Alfred-Herrhausen-Allee 20, 47228 Duisburg,Germany</p>     
+    <p> <span class="glyphicon glyphicon-phone-alt"> </span>  +49 2065 94322-100</p>   
+    <p> <span class="glyphicon glyphicon-print"> </span>  +49 2065 94322-120</p>   
+    <p> <span class="glyphicon glyphicon-envelope"> </span>  infor@brightworld.com</p>
+    <p><a class="btn btn-primary" href="showroom.html">Show on Map</a></p>
+  </div>
+
+  <div class="col-md-4 fh5co-widget">
+    <h3 style="color: orange;">Showroom in Vietnam</h3>
+    <p> <span class="glyphicon glyphicon-home"> </span> 268 Ly Thuong Kiet, District 10, Ho Chi Minh City,Vietnam</p>  
+    <p> <span class="glyphicon glyphicon-phone-alt"> </span>  +49 2065 94322-100</p>   
+    <p> <span class="glyphicon glyphicon-print"> </span>  +49 2065 94322-120</p>   
+    <p> <span class="glyphicon glyphicon-envelope"> </span>  infor@brightworld.com</p>
+    <p><a class="btn btn-primary" href="showroom.html">Show on Map</a></p>
+  </div>
+
+  <div >
+    <div class="col-md-4">
+      <ul class="fh5co-footer-links">
+        <h3 style="color: orange;">Products</h3>
+        <li><a href="Bulds.html">Bulds</a></li>
+        <li><a href="Spotlighting.html">Spot Light</a></li>
+        <li><a href="DecorationLight.html">Decoration Light</a></li>
+        <li><a href="SmartLight.html">Smart Light</a></li>
+      </ul>
+    </div>
+              
+    <div class="col-md-4">
+      <ul class="fh5co-footer-links">
+        <h3 style="color: orange;">Brands</h3>
+        <li><a href="Philips.html">Phillips</a></li>
+        <li><a href="Osram.html">OSRAM</a></li>
+        <li><a href="GE.html">GE Light</a></li>
+        <li><a href="AcuityBrands.html">Acuity Brands</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+      <h3 style="color: orange;">Social links</h3>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.skype.com/"><i class="fa fa-skype"></i></a>
+      <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="row copyright">
+  <div class="col-md-12 text-center">
+    <p>
+      <small class="block">&copy; 2017 | All Rights Reserved.</small> 
+      <small class="block">Powered by  BrightwWorld</small>
+    </p>
+  </div>
+</div>
+</footer>
+</html>
